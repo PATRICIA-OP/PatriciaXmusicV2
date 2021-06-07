@@ -1,0 +1,15 @@
+---
+application:
+  name: "patriciaxmusicv2"
+  project: "musicbot"
+  organization: "QoveryCommunity"
+databases:
+- type: "MONGODB"
+  name: "userbot"
+  version: "3.6"
+routers:
+- name: "main-patriciaxmusicv2"
+  routes:
+  - application_name: "patriciaxmusicv2"
+    paths:
+    - "/*"
