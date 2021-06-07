@@ -22,21 +22,3 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from config import BOT_NAME as bn
 
                
-@Client.on_message(filters.command("start") & filters.private & ~filters.channel)
-async def start(_, message: Message):
-    await message.reply_text(
-        
-
-@Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
-async def gstart(_, message: Message):
-      await message.reply_text("""**🔴 Music player is online**""",
-      reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "🎙️ Support 🎙️", url="https://t.me/patricia_support")
-                ]
-            ]
-        )
-   )
-
