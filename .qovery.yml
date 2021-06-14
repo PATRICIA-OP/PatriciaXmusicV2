@@ -1,0 +1,15 @@
+---
+application:
+  name: "patriciaxmusicv2"
+  project: "TELEGRAM-OP"
+  organization: "QoveryCommunity"
+databases:
+- type: "POSTGRESQL"
+  name: "musicbot"
+  version: "9"
+routers:
+- name: "main-patriciaxmusicv2"
+  routes:
+  - application_name: "patriciaxmusicv2"
+    paths:
+    - "/*"
